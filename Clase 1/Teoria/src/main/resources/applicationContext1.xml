@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+   - name:        applicationContext1.xml
+   - description: Spring application context.
+   - author:      Raul Pena (raul.pena@hotmail.com)
+   -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+		 	               http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+	
+	
+	<!-- 
+	   - Registramos nuestra clase 
+	   -->
+	   
+	   <!--id es el nombre que le vamos a dar a nuestro componente
+	   class es el nombre de la clase-->
+	<bean id="com" 
+	      class="com.educacionit.spring.beginning.class01.hello.Component">
+	      
+	      <!-- Metodo que queremos llamar desde la clase component no hace falta 
+	      colocar el set ya que sabe que es un set-->
+        <property name="Message">
+        <!-- Colocamos el contenido que queremos meter en el set -->
+        	<value>Mensaje a Enviar A: </value>
+        </property>			      
+	      
+    </bean>
+    
+    
+    
+</beans>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+   - name:        applicationContext4.xml
+   - description: Spring application context.
+   - author:      Raul Pena (raul.pena@hotmail.com)
+   -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	                       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    
+	
+	
+	<!-- 
+	   - trae todas las clases que estan en el paquete service, agarra todo y lo registra
+	   context: 
+	   
+	  Spring va a buscar todas las clases que tengan un anotation especifico, ese anotation
+	  debe ser @Service
+	  			@Repository
+	  			@Component
+	  			@Controller
+	  			@RestController
+	  todas las clases que tengan un anotation de ese tipo entonces lo va a registrar en el application
+	  context, a todas las anotation les va a pasar por default el nombre del bean con el cual quedaran 
+	  registrados
+	  por ejemplo
+	  
+	  @Service("Nombre Que se le pone en la clase")
+	  
+	  
+	  Usando Autowired lo mas comun es colocarlo en las variables
+	  con esta anotacion le estoy diciendo a Spring que vaya a buscar una clase que implemente la interfaz
+	  a partir de la cual se creo el objeto al cual se le puso el autowired encima que
+	  este debajo del Autowired
+	  
+	  @Qualifier("nombre de la clase que implementa la interfaz")
+	  
+	  esto sirve para el caso en el que si tenemos muchas clases que implementan la interfaz entonces
+	  vaya en especifico a aquella que tenga el qualifier
+	   -->
+	<context:component-scan base-package="com.educacionit.spring.beginning.class01.service" />
+    
+    
+    
+</beans>
