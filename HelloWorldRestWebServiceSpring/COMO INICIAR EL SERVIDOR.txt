@@ -1,0 +1,3 @@
+ABRIR VENTANA DE POWERSHELL O TERMINAL Y:
+
+./mvnw spring-boot:run
