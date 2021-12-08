@@ -1,0 +1,19 @@
+Sirve para trabajar mas eficientemente con Spring Framework, para agilizar 
+el desarrollo y ser mas productivos.
+
+Como primer paso bajar el Spring tool para eclipse e instalarlo.
+
+Luego creamos un projecto con la dependencia de java web unicamente.
+Sera creado a partir de un spring starter, veremos que automaticamente
+se crea un proyecto jar y maven.
+
+@ComponentScan scanea la ruta de paquetes para poder realizar la inyeccion de 
+dependencias
+
+Esperamos antes de ejecutar que traiga todas las dependencias
+
+Tiene un tomcat incluido en el springboot starter web, esta embebido,
+para poder hacer mas agil la situacion.
+Ya no se utilizara la configuracion excesiva.
+
+Lo inicializa en el puerto 8080 por defecto.
