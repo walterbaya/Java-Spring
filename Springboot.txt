@@ -17,3 +17,23 @@ para poder hacer mas agil la situacion.
 Ya no se utilizara la configuracion excesiva.
 
 Lo inicializa en el puerto 8080 por defecto.
+
+Esas propiedades se pueden modificar en el archivo application.properties.
+
+sino me gusta estar corriendo la aplicacion cada vez que haga un cambio
+podemos usar devtools.
+
+Lo que hace es que la compilacion es automatica luego de cada cambio.
+Tiene sentido si tenemos un equipo potente.
+
+Springboot es la forma moderna de trabajar con Spring.
+
+SPRING INITIALIZR.
+
+Esta pagina web nos permite configurar un sitio Spring desde 0.
+
+La aplicación de consola de spring debe implementar el commandLineRunner
+y el metodo Run para poder ser utilizada.
+
+Para imprimir desde Spring lo ideal es utilizar un logger no system.out.
+
