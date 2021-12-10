@@ -1,0 +1,9 @@
+Abrir un CMD o Powershell
+despues, copiar:
+
+	netstat -ano | findstr 8080
+
+Va a aparecer un proceso con un codigo, lo matamos, para eso:
+usamos
+
+taskkill /F /pid "codigodelProcesoSinComillas"
