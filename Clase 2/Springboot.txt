@@ -1,1 +1,17 @@
 Comenzamos con Springboot.
+
+SPRING INITIALIZER!!!!----
+En ECLIPSE tenemos esto instalado en el iniciador, pero lo ideal 
+es manejarlo por la web.
+
+Resuelve la vida en muchos sentidos.
+
+GROUP: propietario del proyecto.
+ARTIFACT: nombre del proyecto.
+NAME: nombre del proyecto
+
+TAREA: recordar que el trabajo se hizo en H2, es decir en memoria
+devTools son las herramientas de desarrollo de Springboot, para hacer
+compilacion runtime que provee Springboot.
+Luego si nosotros vamos a laburar con MYsql habria que agregar
+esa dependencia.
