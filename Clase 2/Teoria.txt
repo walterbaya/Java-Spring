@@ -1,0 +1,33 @@
+Spring Framework es la manera legacy, la base de cualquier tipo de herramienta
+dentro de todo lo que es la suite de Spring.
+
+Spring Framework:
+
+Los beans que se crean en Springs son de tipo SINGLETON, es decir se crean
+solo una vez, hay una única instancia de una clase en memoria.
+Dentro de el contenedor por cada bean que registramos crea una única instancia de ese
+bean.
+
+En esta clase vamos a aprender brevemente a utilizar JUNIT, para realizar
+pruebas unitarias.
+
+tenemos una clase Calculadora.
+creamos una instancia de ella
+
+Calculadora cal = new Calculadora();
+
+Quiero probar por ejemplo el método dividir.
+
+int a = calc.div(8,2);
+
+if(a == 4){
+  System.out.printl("FUNCIONO !!!");
+}
+else{
+ System.out.printl("NO FUNCIONO !!!");
+}
+
+no funciona para automatizar los tests, porque para saber si el 
+test funciona o no funciona necesitamos que haya un humano viendolo.
+
+Una prueba es comparar el valor esperado vs el recibido.
