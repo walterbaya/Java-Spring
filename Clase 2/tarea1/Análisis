@@ -1,0 +1,22 @@
+La primera línea de ejecución informa que estamos llamando el metodo get.
+Ese método get corresponde al método del servicio.
+
+2022-01-04 13:59:19 DEBUG EmployeeAspect:37 - Service method getter called
+
+Después se va a ejecutar el getName de ese employee, ahora empezamos con los aspectos, como
+es un pointcut el getName, tiene un pointcut asociado 	
+
+@Pointcut("execution(public String getName())")
+	public void getNamePointcut() {
+}
+
+va a ir a buscar los after y before.
+Primero obviamente va a ir a buscar los before, entonces como tenemos 
+@Before("allMethodsPointcut()")
+public void allServiceMethodsAdvice() {
+	logger.debug("Before executing service method");
+}
+
+Nos imprime esta informacion en el logger.
+
+2022-01-04 13:59:19 DEBUG EmployeeAspectPointcut:48 - Before executing service method

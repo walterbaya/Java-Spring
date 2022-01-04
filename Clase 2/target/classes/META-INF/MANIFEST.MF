@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+mode: development
+Implementation-Title: spring.beginning-class02-2
+Implementation-Version: 1.0.0
+Built-By: maximiliano.juarez
+Sealed: true
+Specification-Title: spring.beginning-class02-2
+Implementation-Vendor-Id: com.byte21.educacionit
+Build-Jdk: 1.8.0_201
+Specification-Version: 1.0
+Created-By: Maven Integration for Eclipse
+url: http://www.educacionit.com/
+
