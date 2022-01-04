@@ -13,6 +13,9 @@ import com.educacionit.spring.beginning.class01.beans.Single;
 
 
 @RunWith (SpringJUnit4ClassRunner.class)
+
+//Estoy diciendo que tome el application context y lo cargue
+
 @ContextConfiguration(locations = { "classpath:applicationContext7.xml" })
 public class SingleTest {
 	
@@ -22,6 +25,8 @@ public class SingleTest {
 		super ();
 	}
 	
+        //Dos variables privadas de tipo Single
+
 	
 	@Autowired
 	Single bean1 = null;
@@ -36,5 +41,11 @@ public class SingleTest {
     	System.out.println (bean1.getCode());
     	System.out.println (bean2.getCode ());
     	assertTrue (bean1.getCode ().equals (bean2.getCode ()));
+
+    	//devuelve true debido a que SPRING  trabaja con singleton
+        //inyecta el mismo bean el application context en ambos.
+        //por mas que tenga 30 variables en el application context dice que
+        //solo va a haber uno.
+        assertTrue (bean1.getCode ().equals (bean2.getCode ()));
     }
 }

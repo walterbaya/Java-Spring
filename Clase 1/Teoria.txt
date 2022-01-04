@@ -1,0 +1,85 @@
+Todas las clases que viven en el aplication context se llaman beans.
+las aplicaciones nuevas no trabajan de esta manera, con spring
+framework.
+En realidad trabajan con Springboot.
+
+Patrones de diseño.
+
+Son recetas para problemas comunes existentes en el area de desarrollo
+tienen una manera común de resolverse.
+
+TODOS LOS BEANS QUE SE CREAN DENTRO DE SPRING SON DE TIPO SINGLETON.
+es decir hay solo una instancia de ellos, cada instancia es única.
+De eso se trata propiamente el patrón de diseño SINGLETON.
+SPRING.
+
+Necesitamos manejar una herramienta de código fuente
+Una herramienta para testing
+una herramienta para empaquetado tipo maven y eso.
+    Test
+    //anotación que pertenece a JUNIT
+    //Un Test es un método en una clase
+    //debe de retornar void si o si
+    //el metodo no debe de recibir 
+
+
+   //anotación que pertenece a JUNIT
+    //Un Test es un método en una clase
+    //debe de retornar void si o si
+    //el metodo no debe de recibir parametros.
+    @Test
+    public void divOkTest(){
+        //AAA 
+        /*Corresponde a las tres partes
+        que conforman a un test, la primera
+        es Arrange de arreglo, donde empezamos
+        a organizar*/
+        
+        //Arrange
+        Calculadora cal = new Calculadora();
+        int expected = 4;
+        int a = 8;
+        int b = 2;
+   
+        //ACT de ejecutar
+        
+        int r = cal.div(a,b);
+        
+        //ASSERT comprobacion de que lo que buscamos está funcionando.
+        //retorna una expresion booleana
+        Assert.assertTrue(expected == r);
+
+
+Maven busca primordialmente todo lo que está en test y lo ejecuta
+si alguna prueba falla no nos va a permitir compilar la aplicacion
+por eso mismo está el test.
+Hay herramientas de coverage que nos diga que cierto porcentaje de 
+nuestro código haya sido probado.
+
+BUSCAR UNA HERRAMIENTA DE COBERTURA
+
+Existe forma de cambiar el comportamiento a los beans en SPRING
+pero no lo recomienda.
+Esto pueda causar errores de diseño.
+
+
+en los applicaciont context. 
+init-method: metodo que quiero que se dispare para inicializar
+destroy-method: metodo que quiero ejecutar cuando termina la aplicacion
+de ejecutarse.
+
+TODO SE PUEDE HACER TANTO POR XML como por Anotaciones.
+
+entonces es mejor para mi usar las anotaciones.
+
+@PreDestroy
+	public void pre () {
+		System.out.println ("LLAMADA DESDE EL METODO PRE!!!");
+	}
+	
+	@PostConstruct
+	public void post () {
+		System.out.println ("LLAMADA DESDE EL METODO POST!!!");
+	}
+	
+estas anotaciones no son de Spring sino que forman parte del estandar J2EE

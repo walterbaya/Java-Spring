@@ -10,7 +10,7 @@ import javax.annotation.PreDestroy;
 
 public class Single {
 
-	
+	//atributo llamado code
 	private String code = "";
 	
 	
@@ -19,6 +19,8 @@ public class Single {
 		super ();
 		System.out.println ("LLAMADA DESDE EL CONSTRUCTOR!!!");
 		this.code = randomAlphanumeric (12);
+                //el codigo es un conjunto de caracteres aleatorio 12 letras
+                this.code = randomAlphanumeric (12);
 	}
 	
 	

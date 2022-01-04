@@ -37,3 +37,19 @@ y el metodo Run para poder ser utilizada.
 
 Para imprimir desde Spring lo ideal es utilizar un logger no system.out.
 
+En Spring el ambito de las instancias es Singleton, la inyeccion de
+dependencias la debe proveer Spring propiamente.
+
+La clase que queremos que maneje Spring hay que anotarla con los
+estereotipos.
+
+El estereotipo ideoneo para indicar que algo es un acceso a repositorio
+de informacion es repository.
+
+El estereotipo para indicar que algo es una logica de negocio es service.
+
+Podemos acceder a las instancias definidas en el contenedor de Spring
+usando la anotacion Autowired(busca una implementacion).
+El Autowired inyecta.
+
+Los estereotipos generan java beans en el contenedor de Spring.

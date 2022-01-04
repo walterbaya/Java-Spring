@@ -1,0 +1,41 @@
+Comenzamos con Springboot.
+
+SPRING INITIALIZER!!!!----
+En ECLIPSE tenemos esto instalado en el iniciador, pero lo ideal 
+es manejarlo por la web.
+
+Resuelve la vida en muchos sentidos.
+
+GROUP: propietario del proyecto.
+ARTIFACT: nombre del proyecto.
+NAME: nombre del proyecto
+
+TAREA: recordar que el trabajo se hizo en H2, es decir en memoria
+devTools son las herramientas de desarrollo de Springboot, para hacer
+compilacion runtime que provee Springboot.
+Luego si nosotros vamos a laburar con MYsql habria que agregar
+esa dependencia.
+
+Al agregar las dependencias en el Spring initizalizer se van
+agregando en el pom.xml automaticamente.
+De otra forma habria que agregarlas a mano. 
+
+Comenzamos con la creacion de los objetos de dominio.
+
+lombok permite realizar tareas que son comunes cuando estoy programando,
+como por ejemplo generar metodos de dominio.
+Eliminando esas lineas y lineas de codigo sin sentido.
+
+Application.properties
+son diccionarios de datos. clave valor.
+
+db.data = mysql
+db.user = root
+
+los archivos yml nos dan la posibilidad de escribir menos aún
+
+db
+  data: mysql
+  user: root
+
+Los servicios REST no tienen UI

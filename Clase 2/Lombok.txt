@@ -1,0 +1,4 @@
+Es necesario buscar la dependencia maven  y tambine instalar
+el plugin para eclipse o sea cual sea el ide que estemos usando.
+
+https://projectlombok.org/download
