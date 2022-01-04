@@ -19,6 +19,12 @@ public class AppMain {
         try {
             ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
             EmployeeService employeeService = ctx.getBean ("employeeService", EmployeeService.class);
+            //Cuando hacemos el get ocurren una serie de cosas.
+            
+            /*
+             * 
+             * */
+            
             System.out.println(employeeService.getEmployee().getName());
             employeeService.getEmployee().setName("Raul");
             employeeService.getEmployee().throwException();
